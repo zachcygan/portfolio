@@ -9,22 +9,22 @@ function Navigation({ currentPage, handlePageChange }) {
       <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div className="text-sm lg:flex-grow">
           <button
-            onClick={() => handlePageChange('Home')}
+            onClick={() => handlePageChange('AboutMe')}
             className={currentPage === 'Home' ? 'block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 underline' : 'block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4'}
-          >
-            Home
-          </button>
-          <button
-            onClick={() => handlePageChange('About')}
-            className={currentPage === 'About' ? 'block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 underline' : 'block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4'}
           >
             About
           </button>
           <button
-            onClick={() => handlePageChange('Blog')}
+            onClick={() => handlePageChange('Portfolio')}
+            className={currentPage === 'About' ? 'block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 underline' : 'block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4'}
+          >
+            Portfolio
+          </button>
+          <button
+            onClick={() => handlePageChange('Resume')}
             className={currentPage === 'Blog' ? 'block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 underline' : 'block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4'}
           >
-            Blog
+            Resume
           </button>
           <button
             onClick={() => handlePageChange('Contact')}
