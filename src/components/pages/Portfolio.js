@@ -7,24 +7,24 @@ const files = [
     techStack: 'MERN stack',
     source:
       '/deployedScreenshot1.png',
-    deployLink: '',
-    githubLink: '',
+    deployLink: 'https://graduationrsvp.herokuapp.com/',
+    githubLink: 'https://github.com/zachcygan/grad-party-rsvp',
   },
   {
     title: 'Project Perfect',
     techStack: 'MERN stack',
     source:
       '/deployedScreenshot2.png',
-    deployLink: '',
-    githubLink: '',
+    deployLink: 'https://gpteam.herokuapp.com/',
+    githubLink: 'https://github.com/zachcygan/gpteam',
   },
   {
     title: 'Tech Blog',
     techStack: 'MERN stack',
     source:
       '/deployedScreenshot3.png',
-    deployLink: '',
-    githubLink: '',
+    deployLink: 'https://obscure-bayou-40602.herokuapp.com/',
+    githubLink: 'https://github.com/zachcygan/tech-blog',
   },
   {
     title: 'The Perfect Weekend',
