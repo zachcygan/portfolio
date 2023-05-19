@@ -1,0 +1,7 @@
+.links {
+    pointer-events: none;
+}
+
+.mouseover {
+    pointer-events: all;
+}
