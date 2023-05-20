@@ -55,7 +55,7 @@ const files = [
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className='min-h-screen'>
       <h1 className="flex items-center justify-center sm:text-sm lg:text-lg xl:text-2xl font-bold">Portfolio</h1>
       <div className="flex flex-col items-center justify-center mt-5 p-5">
         <ul className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8">

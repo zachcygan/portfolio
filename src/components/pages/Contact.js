@@ -50,7 +50,7 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <div className='min-h-screen'>
       {success&&(<Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={setOpen}>
         <Transition.Child

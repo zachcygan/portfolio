@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AboutMe() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center min-h-screen">
       <h1 className="text-2xl font-bold mb-4">About me</h1>
       <img 
         src="profile.jpg" 
