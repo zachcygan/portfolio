@@ -27,6 +27,8 @@ export default function Contact() {
       setEmailState(false)
       document.querySelector('.target').classList.remove('hidden')
       document.querySelector('.target2').classList.remove('hidden')
+      document.querySelector('.emailInput').classList.remove(['focus:ring-blue-500'])
+      document.querySelector('.emailInput').classList.add(['ring-red-300', 'focus:ring-red-500'])
     } else {
       setEmailState(true)
       setEmail(email)
@@ -37,18 +39,16 @@ export default function Contact() {
 
   const form = useRef();
 
-
   const sendEmail = (e) => {
     emailjs.sendForm('service_rho4q1u', 'template_kyxpqld', form.current, '1VgI4yMIQfQW7ffZw')
       .then((result) => {
-        console.log('OPEN'+open)
-        
+        console.log(result.text)
         setSuccess(true)
       }, (error) => {
         console.log(error.text);
       });
   };
-  console.log('OPEN'+open)
+
   return (
     <div>
       {success&&(<Transition.Root show={open} as={Fragment}>
@@ -112,14 +112,14 @@ export default function Contact() {
     </Transition.Root>)}
       
 
-      <h1>Contact Me</h1>
+    <h1 className="flex items-center justify-center sm:text-sm lg:text-lg xl:text-2xl font-bold">Contact Me</h1>
 
       <form ref={form} onSubmit={sendEmail}>
         <div className='mx-auto w-[50%] pt-5'>
           <label htmlFor="name" className="block pb-1 text-sm font-medium leading-6 text-gray-900">
             Name
           </label>
-          <div className="rounded-md px-3 pb-1.5 pt-2.5 shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-indigo-600">
+          <div className="rounded-md px-3 pb-1.5 pt-2.5 shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-blue-500">
 
             <input
               value={name}
@@ -147,7 +147,7 @@ export default function Contact() {
                 type="email"
                 name="email"
                 id="email"
-                className="block w-full rounded-md border-0 py-1.5 pr-10 text-red-900 ring-1 ring-inset ring-red-300 placeholder:text-red-300 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"
+                className="block emailInput w-full rounded-md border-0 py-1.5 pr-10 text-gray-900 ring-1 ring-inset focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6"
                 placeholder="you@example.com"
                 defaultValue="adamwathan"
                 aria-invalid="true"
