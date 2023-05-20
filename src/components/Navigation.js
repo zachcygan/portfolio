@@ -32,7 +32,7 @@ function Navigation({ currentPage, handlePageChange }) {
                     onClick={() => handlePageChange('AboutMe')}
                     className="block h-8 w-auto lg:hidden"
                     style={{cursor: 'pointer'}}
-                    src="/headIcon.png"
+                    src="/icon.png"
                     alt="Your Company"
                   />
                   <img
@@ -40,7 +40,7 @@ function Navigation({ currentPage, handlePageChange }) {
                     onClick={() => handlePageChange('AboutMe')}
                     className="hidden h-8 w-auto lg:block"
                     style={{cursor: 'pointer'}}
-                    src="/headIcon.png"
+                    src="/icon.png"
                     alt="Your Company"
                   />
                 </div>
