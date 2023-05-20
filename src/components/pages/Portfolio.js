@@ -58,7 +58,7 @@ export default function Portfolio() {
     <div className='min-h-screen'>
       <h1 className="flex items-center justify-center sm:text-sm lg:text-lg xl:text-2xl font-bold">Portfolio</h1>
       <div className="flex flex-col items-center justify-center mt-5 p-5">
-        <ul className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8">
+        <ul className="grid sm:grid-cols-2 sm:gap-x-6 2xl:grid-cols-2 xl:gap-x-8">
           {files.map((file) => (
             <li key={file.source} className="relative">
               <div className="group aspect-auto w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
