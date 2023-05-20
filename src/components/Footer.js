@@ -2,7 +2,7 @@ import React from 'react'
 
 const navigation = {
     main: [
-      { name: 'About', href: '/AboutMe' },
+      { name: 'AboutMe', href: '/AboutMe' },
       { name: 'Portfolio', href: '/Portfolio' },
       { name: 'Resume', href: '/Resume' },
       { name: 'Contact', href: '/Contact' },
@@ -45,16 +45,16 @@ const navigation = {
     ],
   }
   
-  export default function Footer() {
+  export default function Footer({ currentPage, handlePageChange }) {
     return (
       <footer className="bg-blue-500 w-full">
         <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-12 lg:px-8">
           <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
             {navigation.main.map((item) => (
               <div key={item.name} className="pb-6">
-                <a target='_' href={item.href} className="text-sm leading-6 text-white-600 hover:text-white-900">
+                <button onClick={() => handlePageChange(item.name)} className="text-sm leading-6 focus:pointer-events-auto text-white-600 hover:text-white-900">
                   {item.name}
-                </a>
+                </button>
               </div>
             ))}
           </nav>
