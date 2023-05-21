@@ -47,7 +47,7 @@ const navigation = {
   
   export default function Footer({ currentPage, handlePageChange }) {
     return (
-      <footer className="bg-blue-500 w-full">
+      <footer className="bg-blue-500 w-full dark:bg-zinc-800 dark:text-zinc-100">
         <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-12 lg:px-8">
           <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
             {navigation.main.map((item) => (
@@ -58,7 +58,7 @@ const navigation = {
               </div>
             ))}
           </nav>
-          <div className="mt-10 flex justify-center space-x-10">
+          <div className="mt-10 flex justify-center space-x-10 dark:text-zinc-100">
             {navigation.social.map((item) => (
               <a target='_' key={item.name} href={item.href} className="">
                 <span className="sr-only">{item.name}</span>

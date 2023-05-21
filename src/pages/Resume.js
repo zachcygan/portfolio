@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function Resume() {
   return (
-    <div>
-      <div className="bg-white shadow sm:rounded-lg">
+    <div className='dark:bg-zinc-800'>
+      <div className="bg-white shadow sm:rounded-lg ">
         <div className="px-4 py-5 sm:p-6">
           <h3 className="text-base font-semibold leading-6 text-gray-900">Resume</h3>
-          <div className="mt-2 max-w-xl text-sm text-gray-500">
+          <div className="mt-2 max-w-xl text-sm text-gray-500 ">
             <p>
               Click the link below to download my resume
             </p>
@@ -24,7 +24,7 @@ export default function Resume() {
       </div>
 
       <div className=''>
-      <iframe title='resume' src="https://docs.google.com/document/d/1g8X4QxhzbnmdHMXLR2ZYXB-2dkakpvn8/preview?usp=sharing&ouid=114354419991059278766&rtpof=true&sd=true" width="100%" height="1000" frameborder="0"></iframe>
+      <iframe className='' title='resume' src="https://docs.google.com/document/d/1g8X4QxhzbnmdHMXLR2ZYXB-2dkakpvn8/preview?usp=sharing&ouid=114354419991059278766&rtpof=true&sd=true" width="100%" height="1000" frameborder="0"></iframe>
       </div>
     </div>
   );
