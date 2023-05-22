@@ -14,9 +14,9 @@ function Navigation({ currentPage, handlePageChange }) {
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XMarkIcon className="block h-6 w-6 dark:bg-zinc-800" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <Bars3Icon className="block h-6 w-6 dark:bg-zinc-800" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
@@ -69,33 +69,33 @@ function Navigation({ currentPage, handlePageChange }) {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 pb-4 pt-2">
+            <div className="space-y-1 pb-4 pt-2 dark:bg-zinc-800">
               {/* Current: "bg-indigo-50 border-blue-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-blue-500 hover:text-gray-700" */}
               <Disclosure.Button
                 as="a"
                 onClick={() => handlePageChange('AboutMe')}
-                className={currentPage === 'AboutMe' ? "block border-l-4 border-blue-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700 dark:text-zinc-100" : "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-blue-500 hover:bg-gray-50 hover:text-gray-700"}
+                className={currentPage === 'AboutMe' ? "block border-l-4 border-blue-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700 dark:text-zinc-100 dark:bg-zinc-800" : "dark:bg-zinc-800 block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-blue-500 hover:bg-gray-50 hover:text-gray-700"}
               >
                 About Me
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 onClick={() => handlePageChange('Portfolio')}
-                className={currentPage === 'Portfolio' ? "block border-l-4 border-blue-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700 dark:text-zinc-100" : "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-blue-500 hover:bg-gray-50 hover:text-gray-700"}
+                className={currentPage === 'Portfolio' ? "block border-l-4 border-blue-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700 dark:text-zinc-100 dark:bg-zinc-800" : "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-blue-500 hover:bg-gray-50 hover:text-gray-700"}
               >
                 Portfolio
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 onClick={() => handlePageChange('Resume')}
-                className={currentPage === 'Resume' ? "block border-l-4 border-blue-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700 dark:text-zinc-100" : "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-blue-500 hover:bg-gray-50 hover:text-gray-700"}
+                className={currentPage === 'Resume' ? "block border-l-4 border-blue-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700 dark:text-zinc-100 dark:bg-zinc-800" : "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-blue-500 hover:bg-gray-50 hover:text-gray-700"}
               >
                 Resume
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 onClick={() => handlePageChange('Contact')}
-                className={currentPage === 'Contact' ? "block border-l-4 border-blue-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700 dark:text-zinc-100" : "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-blue-500 hover:bg-gray-50 hover:text-gray-700"}
+                className={currentPage === 'Contact' ? "block border-l-4 border-blue-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700 dark:text-zinc-100 dark:bg-zinc-800" : "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-blue-500 hover:bg-gray-50 hover:text-gray-700"}
               >
                 Contact
               </Disclosure.Button>
