@@ -180,7 +180,7 @@ export default function Contact() {
                     <EnvelopeIcon className="h-7 w-6 text-gray-400 dark:text-zinc-100" aria-hidden="true" />
                   </dt>
                   <dd>
-                    <a className="hover:text-gray-900" href="mailto:hello@example.com">
+                    <a className="hover:text-gray-900" href="mailto:zachcygan@gmail.com">
                       zachcygan@gmail.com
                     </a>
                   </dd>
