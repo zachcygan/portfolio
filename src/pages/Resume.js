@@ -8,7 +8,7 @@ export default function Resume() {
           <h3 className="text-base font-semibold leading-6 text-gray-900 dark:text-zinc-100">Resume</h3>
           <div className="mt-2 max-w-xl text-sm text-gray-500 ">
             <p className='dark:text-zinc-100'>
-              Click the link below to download my resume
+              Like what you see? Click the link below to download my resume!
             </p>
           </div>
           <div className="mt-5">
