@@ -24,7 +24,7 @@ export default function Resume() {
       </div>
 
       <div className=''>
-      <iframe className='' title='resume' src="https://docs.google.com/document/d/1TInbdGHe4BT3lxRBPPbxlkb6b2lNGS_7/preview?usp=sharing&ouid=114354419991059278766&rtpof=true&sd=true" width="100%" height="1000" frameborder="0"></iframe>
+      <iframe className='' title='resume' src="https://docs.google.com/document/d/1C5I4eJ9M65N1mWQK00sovc97pmrSh4DM/preview?usp=sharing&ouid=114354419991059278766&rtpof=true&sd=true" width="100%" height="1000" frameborder="0"></iframe>
       </div>
     </div>
   );
