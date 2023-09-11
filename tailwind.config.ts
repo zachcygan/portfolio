@@ -19,6 +19,7 @@ const config: Config = {
       },
       colors: {
         'blue': '#1d4ed8',
+        'lightBlue': '#60a5fa',
       },
     },
   },

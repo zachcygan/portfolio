@@ -33,12 +33,12 @@ export default function ContactForm() {
     };
 
     return (
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail} className=''>
             <div className="space-y-12">
                 <div className="border-b border-gray-900/10 pb-12">
                     <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                         <div className="sm:col-span-3">
-                            <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">
+                            <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900 dark:text-white">
                                 First name
                             </label>
                             <div className="mt-2">
@@ -48,7 +48,7 @@ export default function ContactForm() {
                                         name="firstName"
                                         id="firstName"
                                         autoComplete="firstName"
-                                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 bg-white rounded-md"
                                         value={firstName}
                                         onChange={(e) => { setFirstName(e.target.value) }}
                                         placeholder='Zach'
@@ -58,7 +58,7 @@ export default function ContactForm() {
                         </div>
 
                         <div className="sm:col-span-3">
-                            <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
+                            <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900 dark:text-white">
                                 Last name
                             </label>
                             <div className="mt-2">
@@ -69,7 +69,7 @@ export default function ContactForm() {
                                         name="lastName"
                                         id="last-name"
                                         autoComplete="last-name"
-                                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 bg-white rounded-md"
                                         value={lastName}
                                         onChange={(e) => { setLastName(e.target.value) }}
                                         placeholder='Cygan'
@@ -78,7 +78,7 @@ export default function ContactForm() {
                             </div>
                         </div>
                         <div className="sm:col-span-3">
-                            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900 flex justify-between items-center">
+                            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900 dark:text-white flex justify-between items-center">
                                 Email address
                                 {emailTouched && !isValidEmail(email) && <span className="text-red-500 text-xs">Please enter a valid email address</span>}
                             </label>
@@ -97,7 +97,7 @@ export default function ContactForm() {
                             </div>
                         </div>
                         <div className="sm:col-span-3">
-                            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900 flex justify-between items-center">
+                            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900 dark:text-white flex justify-between items-center">
                                 Phone Number
                             </label>
                             <div className="mt-2">
@@ -114,11 +114,11 @@ export default function ContactForm() {
                             </div>
                         </div>
                         <div className="sm:col-span-6">
-                            <label htmlFor="subject" className="block text-sm font-medium leading-6 text-gray-900">
+                            <label htmlFor="subject" className="block text-sm font-medium leading-6 text-gray-900 dark:text-white">
                                 Subject
                             </label>
                             <div className="mt-2">
-                                <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
+                                <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 bg-white rounded-md">
                                     <input
                                         type="text"
                                         name="subject"
@@ -133,7 +133,7 @@ export default function ContactForm() {
                             </div>
                         </div>
                         <div className="col-span-full">
-                            <label htmlFor="message" className="block text-sm font-medium leading-6 text-gray-900">
+                            <label htmlFor="message" className="block text-sm font-medium leading-6 text-gray-900 dark:text-white">
                                 Message
                             </label>
                             <div className="mt-2">
@@ -181,12 +181,12 @@ export default function ContactForm() {
             </div>
 
             <div className="mt-6 flex items-center justify-end gap-x-6">
-                <button type="button" className="text-sm font-semibold leading-6 text-gray-900">
+                <button type="button" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
                     Cancel
                 </button>
                 <button
                     type="submit"
-                    className="rounded-full bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className="rounded-full bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-lightBlue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                     Send
                 </button>
