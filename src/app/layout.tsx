@@ -7,11 +7,6 @@ import Footer from '../components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Zach Cygan - Full Stack Web Developer',
-  description: 'Zachary Cygan is a full stack web developer with a passion for creating beautiful, functional websites and web applications.',
-}
-
 export default function RootLayout({
   children,
 }: {
