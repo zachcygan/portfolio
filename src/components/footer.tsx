@@ -1,5 +1,7 @@
 'use client'
 import Link from 'next/link'
+import SlideOver from './slideOver';
+import { useState } from 'react';
 
 type IconProps = React.ComponentProps<"svg">;
 
@@ -49,6 +51,8 @@ const navigation = {
 }
 
 export default function Footer() {
+    const [isSlideOpen, setIsSlideOpen] = useState<boolean>(false)
+
     return (
         <footer className="bg-blue-500 w-full dark:bg-zinc-800 dark:text-zinc-100">
             <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-12 lg:px-8">
@@ -56,7 +60,15 @@ export default function Footer() {
                     {navigation.main.map((item) => (
                         <div key={item.name} className="pb-6">
                             <Link href={item.href}>
-                                <button className="text-sm leading-6 focus:pointer-events-auto text-white-600 hover:text-white-900">
+                                <button 
+                                    className="text-sm leading-6 focus:pointer-events-auto text-white-600 hover:text-white-900"
+                                    onClick={(e) => {
+                                        if (item.name === 'Contact') {
+                                          e.preventDefault(); // prevent navigation
+                                          setIsSlideOpen(true);
+                                        }
+                                      }}
+                                >
                                     {item.name}
                                 </button>
                             </Link>
@@ -71,6 +83,7 @@ export default function Footer() {
                         </Link>
                     ))}
                 </div>
+                <SlideOver isOpen={isSlideOpen} onClose={() => setIsSlideOpen(false)} />
             </div>
         </footer>
     )
