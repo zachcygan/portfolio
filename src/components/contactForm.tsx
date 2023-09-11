@@ -16,7 +16,7 @@ export default function ContactForm() {
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (form.current !== null) {
-            emailjs.sendForm('service_fzix91g', 'template_2wbljac', form.current, 'jUyA5LHa70k8i0tEl')
+            emailjs.sendForm('service_rho4q1u', 'template_kyxpqld', form.current, '1VgI4yMIQfQW7ffZw')
                 .then((result) => {
                     console.log(result.text)
                 }, (error) => {
@@ -106,7 +106,7 @@ export default function ContactForm() {
                                     name="phone"
                                     type="tel"
                                     autoComplete="phone"
-                                    value={email}
+                                    value={phone}
                                     onChange={(e) => setPhone(e.target.value)}
                                     placeholder='999-999-9999'
                                     className={`block w-full rounded-md border-0 py-1.5 pl-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6`}
