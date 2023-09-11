@@ -1,14 +1,14 @@
 'use client'
-import { Fragment, useEffect, useState } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useState } from 'react'
+import { Disclosure } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { usePathname } from 'next/navigation'
 import SlideOver from './slideOver'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const navigation = [
-  { name: 'About Me', href: '/', current: true },
+  { name: 'About', href: '/', current: true },
   { name: 'Portfolio', href: '/portfolio', current: false },
   { name: 'Resume', href: '/resume', current: false },
   { name: 'Contact', href: '#', current: false },
@@ -58,13 +58,13 @@ export default function Navbar() {
                   </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block flex-auto">
-                  <div className="flex items-center justify-center max-[900px]:hidden">
+                  <div className="flex items-center justify-center max-[900px]:hidden ring-2 rounded-full p-2">
                     {navigation.map((item) => {
                       return (<Link
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.href === pathname ? 'bg-blue text-white rounded-full px-3 text-lg py-2 font-medium' : 'text-black hover:bg-accent hover:rounded-full hover:text-white rounded-md px-3 py-2 text-lg font-medium'
+                          item.href === pathname ? 'bg-blue text-black rounded-full px-3 text-lg py-2 font-medium' : 'text-white hover:bg-blue hover:rounded-full hover:text-white rounded-md px-2 mx-1 py-2 text-lg font-medium'
                         )}
                         aria-current={item.href === pathname ? 'page' : undefined}
                         onClick={(e) => {
