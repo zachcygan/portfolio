@@ -1,4 +1,3 @@
-'use client'
 import { Metadata } from 'next'
 import ResumeInfo from '../../components/resume'
 

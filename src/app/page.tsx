@@ -1,4 +1,3 @@
-'use client'
 import { Metadata } from 'next'
 import AboutMe from "../components/aboutMe"
 
