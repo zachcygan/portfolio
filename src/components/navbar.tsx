@@ -50,9 +50,9 @@ export default function Navbar() {
                     className='flex items-center justify-center'
                   >
                     <Image
-                      src="/assets/images/wheelsOfMercy.png"
+                      src="/assets/images/headIcon.png"
                       alt="Wheels of Mercy"
-                      width={180}
+                      width={50}
                       height={50}
                     />
                   </Link>
