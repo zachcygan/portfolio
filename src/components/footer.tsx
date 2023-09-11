@@ -6,9 +6,9 @@ type IconProps = React.ComponentProps<"svg">;
 const navigation = {
     main: [
         { name: 'AboutMe', href: '/' },
-        { name: 'Portfolio', href: '/Portfolio' },
-        { name: 'Resume', href: '/Resume' },
-        { name: 'Contact', href: '/Contact' },
+        { name: 'Portfolio', href: '/portfolio' },
+        { name: 'Resume', href: '/resume' },
+        { name: 'Contact', href: '' },
     ],
     social: [
         {
