@@ -2,6 +2,7 @@
 import { Fragment, useState, useEffect } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
+import ContactForm from './contactForm'
 
 type SlideOverProps = {
     isOpen: boolean;
@@ -69,7 +70,7 @@ export default function SlideOver({ isOpen, onClose }: SlideOverProps) {
                                             </div>
                                         </div>
                                         <div className="relative mt-6 flex-1 px-4 sm:px-6">
-                                            {/* CONTACT FORM GOES HERE */}
+                                            <ContactForm />
                                         </div>
                                     </div>
                                 </Dialog.Panel>
