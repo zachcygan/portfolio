@@ -26,10 +26,10 @@ export default function Navbar() {
   const [isSlideOpen, setIsSlideOpen] = useState<boolean>(false)
 
   return (
-    <Disclosure as="nav" className="">
+    <Disclosure as="nav" className="dark:bg-darkBg">
       {({ open }) => (
         <>
-          <div className="ring-1 ring-accent rounded-full drop-shadow max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 bg-white">
+          <div className=" max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 right-0 flex items-center min-[900px]:hidden">
                 {/* Mobile menu button*/}
@@ -57,19 +57,19 @@ export default function Navbar() {
                     />
                   </Link>
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
+                <div className="hidden sm:ml-6 sm:block flex-auto">
                   <div className="flex items-center justify-center max-[900px]:hidden">
                     {navigation.map((item) => {
                       return (<Link
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.href === pathname ? 'bg-black text-white rounded-full px-3 text-lg py-2 font-medium' : 'text-black hover:bg-accent hover:rounded-full hover:text-white rounded-md px-3 py-2 text-lg font-medium'
+                          item.href === pathname ? 'bg-blue text-white rounded-full px-3 text-lg py-2 font-medium' : 'text-black hover:bg-accent hover:rounded-full hover:text-white rounded-md px-3 py-2 text-lg font-medium'
                         )}
                         aria-current={item.href === pathname ? 'page' : undefined}
                         onClick={(e) => {
                           if (item.name === 'Contact') {
-                            e.preventDefault(); // prevent navigation
+                            e.preventDefault();
                             setIsSlideOpen(true);
                           }
                         }}
@@ -111,7 +111,7 @@ export default function Navbar() {
           </Disclosure.Panel>
         </>
       )}
-       
+
     </Disclosure>
   )
 }

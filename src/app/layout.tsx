@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-pattern'>
+      <body className='dark:bg-darkBg'>
         <header className='mx-auto pt-2 pb-2'>
           <Navbar />
         </header>

@@ -61,7 +61,7 @@ export default function Footer() {
                         <div key={item.name} className="pb-6">
                             <Link href={item.href}>
                                 <button 
-                                    className="text-sm leading-6 focus:pointer-events-auto text-white-600 hover:text-white-900"
+                                    className="text-sm leading-6 focus:pointer-events-auto text-white-600 hover:text-blue"
                                     onClick={(e) => {
                                         if (item.name === 'Contact') {
                                           e.preventDefault(); // prevent navigation
