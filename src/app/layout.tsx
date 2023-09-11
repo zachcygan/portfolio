@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,7 +21,7 @@ export default function RootLayout({
       <link rel="icon" href="/assets/images/icon.png" />
       <body className='bg-pattern'>
         <header className='mx-auto pt-2 pb-2'>
-          
+          <Navbar />
         </header>
         <div className='min-h-[73vh]'>
           {children}
