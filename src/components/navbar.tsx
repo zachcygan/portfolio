@@ -42,8 +42,7 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-between sm:items-stretch">
-                <div className="text-black flex flex-shrink-0 items-center justify-center">
+              <div className="text-black flex flex-shrink-0 items-center justify-center">
                   <Link
                     key={'Wheels of Mercy'}
                     href={'/'}
@@ -57,7 +56,9 @@ export default function Navbar() {
                     />
                   </Link>
                 </div>
-                <div className="hidden sm:ml-6 sm:block flex-auto">
+              <div className="flex flex-1 items-center justify-center sm:items-stretch">
+                
+                <div className="hidden sm:ml-6 sm:block flex">
                   <div className="flex items-center justify-center max-[900px]:hidden ring-2 rounded-full p-2">
                     {navigation.map((item) => {
                       return (<Link
