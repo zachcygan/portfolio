@@ -1,11 +1,21 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react';
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 
-const inter = Inter({ subsets: ['latin'] })
+export const metadata: Metadata = {
+  metadataBase: new URL('https://zachcygan.com'),
+  title: 'Zach Cygan',
+  description: 'Zach Cygan\'s personal portfolio website',
+  openGraph: {
+    title: 'Zach Cygan',
+    images: './opengraph-image.png',
+    url: 'https://zachcygan.com',
+    type: 'website',
+    description: 'Zach Cygan\'s personal portfolio website Logo'
+  },
+}
 
 export default function RootLayout({
   children,

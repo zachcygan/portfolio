@@ -44,20 +44,19 @@ export default function Navbar() {
               </div>
               <div className="text-black flex flex-shrink-0 items-center justify-center">
                   <Link
-                    key={'Wheels of Mercy'}
+                    key={'Zach Cygan\'s Portfolio'}
                     href={'/'}
                     className='flex items-center justify-center'
                   >
                     <Image
                       src="/assets/images/headIcon.png"
-                      alt="Wheels of Mercy"
+                      alt="Website Head Icon"
                       width={50}
                       height={50}
                     />
                   </Link>
                 </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch">
-                
                 <div className="hidden sm:ml-6 sm:block flex">
                   <div className="flex items-center justify-center max-[900px]:hidden ring-2 rounded-full p-2">
                     {navigation.map((item) => {
