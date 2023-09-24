@@ -156,7 +156,7 @@ export default function Navbar() {
                         <Link
                           key={item.name}
                           href={item.href}
-                          className={`px-5 py-2 rounded-md text-lg lg:text-lg relative no-underline duration-200 ease-in hover:text-black ${isActive ? "text-black" : "text-gray-700"}`}
+                          className={`px-5 py-2 rounded-md text-lg lg:text-lg relative no-underline duration-200 ease-in hover:text-blue ${isActive ? "text-blue" : "text-stone-300"}`}
                           aria-current={item.href === pathname ? 'page' : undefined}
                           onClick={(e) => {
                             if (item.name === 'Contact') {
