@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='dark:bg-darkBg'>
-        <header className='mx-auto pt-2 pb-2'>
+        <header className='mx-auto py-2'>
           <Navbar />
         </header>
         <div className='min-h-[73vh]'>

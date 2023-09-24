@@ -15,7 +15,7 @@ const config: Config = {
       },
       backgroundColor: {
         'darkBg': '#27272a',
-        'blue': '#1d4ed8',
+        'blueBg': '#1d4ed8',
       },
       colors: {
         'blue': '#1d4ed8',
