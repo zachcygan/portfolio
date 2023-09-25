@@ -15,7 +15,7 @@ export default function ResumeInfo() {
                         <a
                             href="/assets/files/ZacharyCygan_resume.docx"
                             type="button"
-                            className="inline-flex items-center rounded-md bg-blue-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                            className="inline-flex items-center rounded-md bg-blue-500 px-3 py-2 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                         >
                             Download
                         </a>
@@ -23,8 +23,8 @@ export default function ResumeInfo() {
                 </div>
             </div>
 
-            <div className='min-h-[100]'>
-                <iframe className='dark:invert ' title='resume' src="https://docs.google.com/document/d/1C5I4eJ9M65N1mWQK00sovc97pmrSh4DM/preview?usp=sharing&ouid=114354419991059278766&rtpof=true&sd=true" width="100%" height="1100"></iframe>
+            <div className='min-h-[100] mx-auto'>
+                <iframe className='dark:invert mx-auto' title='resume' src="https://docs.google.com/document/d/1C5I4eJ9M65N1mWQK00sovc97pmrSh4DM/preview?usp=sharing&ouid=114354419991059278766&rtpof=true&sd=true" width="50%" height="1100"></iframe>
             </div>
         </div>
     )
