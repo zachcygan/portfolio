@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'Zach Cygan\'s personal portfolio website',
   },
   other: {
-    'apple-mobile-web-app-status-bar-style': '#18181b',
+    'theme-color': '#1d4ed8',
   }
 }
 
