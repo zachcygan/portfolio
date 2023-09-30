@@ -15,9 +15,6 @@ export const metadata: Metadata = {
     type: 'website',
     description: 'Zach Cygan\'s personal portfolio website',
   },
-  other: {
-    'theme-color': '#1d4ed8',
-  }
 }
 
 export default function RootLayout({
