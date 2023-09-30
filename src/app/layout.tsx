@@ -13,8 +13,11 @@ export const metadata: Metadata = {
     images: './opengraph-image.jpg',
     url: 'https://zachcygan.com',
     type: 'website',
-    description: 'Zach Cygan\'s personal portfolio website'
+    description: 'Zach Cygan\'s personal portfolio website',
   },
+  other: {
+    'apple-mobile-web-app-status-bar-style': '#18181b',
+  }
 }
 
 export default function RootLayout({
