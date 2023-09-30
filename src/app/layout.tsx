@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     images: './opengraph-image.png',
     url: 'https://zachcygan.com',
     type: 'website',
-    description: 'Zach Cygan\'s personal portfolio website Logo'
+    description: 'Zach Cygan\'s personal portfolio website'
   },
 }
 
