@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Zach Cygan',
   description: 'Zach Cygan\'s personal portfolio website',
   openGraph: {
-    title: 'Zach Cygan',
+    title: 'Zach Cygan\'s Portfolio',
     images: './opengraph-image.jpg',
     url: 'https://zachcygan.com',
     type: 'website',
