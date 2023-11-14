@@ -27,7 +27,7 @@ export default function ResumeInfo() {
                 <iframe 
                     className='dark:invert mx-auto' 
                     title='resume' 
-                    src="https://docs.google.com/document/d/11Kzd59lBVZcAY0Wx02uf2R_U9-93aUT5/preview?usp=sharing&ouid=114354419991059278766&rtpof=true&sd=true" 
+                    src="https://docs.google.com/document/d/11Kzd59lBVZcAY0Wx02uf2R_U9-93aUT5/preview?usp=drive_link&ouid=114354419991059278766&rtpof=true&sd=true" 
                     width="100%" 
                     height="100%"
                 ></iframe>
