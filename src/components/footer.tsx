@@ -7,7 +7,7 @@ type IconProps = React.ComponentProps<"svg">;
 
 const navigation = {
     main: [
-        { name: 'AboutMe', href: '/' },
+        { name: 'About', href: '/' },
         { name: 'Portfolio', href: '/portfolio' },
         { name: 'Resume', href: '/resume' },
         { name: 'Contact', href: '' },
@@ -60,7 +60,7 @@ export default function Footer() {
                     {navigation.main.map((item) => (
                         <div key={item.name} className="pb-6">
                             <Link href={item.href}>
-                                <button 
+                                <div 
                                     className="text-sm leading-6 focus:pointer-events-auto text-white-600 hover:text-blue"
                                     onClick={(e) => {
                                         if (item.name === 'Contact') {
@@ -70,7 +70,7 @@ export default function Footer() {
                                       }}
                                 >
                                     {item.name}
-                                </button>
+                                </div>
                             </Link>
                         </div>
                     ))}
