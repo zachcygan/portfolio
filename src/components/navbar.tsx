@@ -194,6 +194,9 @@ export default function Navbar() {
                   <SlideOver isOpen={isSlideOpen} onClose={() => setIsSlideOpen(false)} />
                 </div>
               </div>
+              <div className='w-[50px]'>
+                {/* dummby div to move navbar to center */}
+              </div>
             </div>
           </div>
         </>

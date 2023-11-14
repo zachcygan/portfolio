@@ -23,7 +23,7 @@ export default function ResumeInfo() {
                 </div>
             </div>
 
-            <div className='mx-auto sm:w-full lg:w-1/2 h-[105vh]'>
+            <div className='mx-auto sm:w-full 2xl:w-1/2 h-[105vh]'>
                 <iframe 
                     className='dark:invert mx-auto' 
                     title='resume' 
